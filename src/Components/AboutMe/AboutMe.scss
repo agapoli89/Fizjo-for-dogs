@@ -1,0 +1,18 @@
+@import '../../styles/breakpoints.scss';
+
+.about-me {
+    @include small {
+        width: 90vw;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    @include medium {
+        width: 80vw;
+    }
+    @include large {
+        width: 70vw;
+    }
+    @include extra-large {
+        width: 60vw;
+    }
+}

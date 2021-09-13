@@ -1,0 +1,42 @@
+@import './styles/variables.scss';
+@import './styles/breakpoints.scss';
+
+.App {
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.main-content {
+  margin: 0;
+  width: 100%;
+  min-height: 70vh;
+  box-sizing: border-box;
+  background: rgb(242,185,153);
+  background: linear-gradient(360deg, rgba(242,185,153,0.01) 0%, rgba(242,185,153,0.2) 35%, rgba(242,185,153,1) 100%);
+  color: $main-text-color;
+  text-align: justify;
+  &__header {
+    margin: 0;
+    padding: 1rem 0 0 1rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+    align-self: flex-start;
+    @include extra-large {
+      font-size: 1.5rem;
+    }
+  }
+  &__text {
+    padding: 0 1rem;
+    font-weight: 500;
+    @include extra-large {
+      font-size: 1.1rem;
+    }
+  }
+  & a {
+    text-decoration: none;
+    color: $main-text-color;
+    @include extra-large {
+      font-size: 2rem;
+    }
+  }
+}

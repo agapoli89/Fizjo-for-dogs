@@ -1,0 +1,27 @@
+@import '../../styles/breakpoints.scss';
+
+.contact {
+    margin-bottom: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    &__link {
+        align-self: center;
+        display: flex;
+        align-items: center;
+        column-gap: 0.5rem;
+    }
+    @include small {
+        width: 90vw;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    @include medium {
+        width: 80vw;
+    }
+    @include large {
+        width: 70vw;
+    }
+    @include extra-large {
+        width: 60vw;
+    }
+}

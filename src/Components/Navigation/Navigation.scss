@@ -1,0 +1,57 @@
+@import '../../styles/variables.scss';
+@import '../../styles/breakpoints.scss';
+
+.navigation {
+    margin: 0;
+    padding: 1.2rem 0;
+    width: 100%;
+    box-sizing: border-box;
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(206,222,242,0.5) 10%, rgba(206,222,242,1) 60%);
+    display: flex;
+    justify-content: space-around;
+    color: $main-color;
+    font-size: 1.1rem;
+    font-weight: 500;
+    &__name {
+        width: 60%;
+        text-align: start;
+        display: flex;
+        flex-direction: column;
+        & span {
+            font-size: 0.9rem;
+        }
+        @include medium {
+            width: 50%;
+        }
+    }
+    &__hamburger {
+        font-size: 2rem;
+        @include medium {
+            display: none;
+        }
+    }
+    &__menu {
+        display: none;
+        @include medium {
+            display: block;
+            list-style: none;
+            & li {
+            display: inline;
+            margin-left: 1rem;
+            cursor: pointer;
+            }
+        }
+    }
+    @include medium {
+        padding: 1.2rem 3rem;
+        align-items: center;
+    }
+    @include large {
+        padding: 1.2rem 9rem;
+    }
+    @include extra-large {
+        padding: 1.2rem 12rem;
+        font-size: 1.3rem;
+    }
+}

@@ -1,0 +1,9 @@
+@import '../../styles/variables.scss';
+
+.footer {
+    padding: 0.5rem 0;
+    background-color: $background-main;
+    color: $main-text-color;
+    font-size: 0.9rem;
+    font-weight: 600;
+}

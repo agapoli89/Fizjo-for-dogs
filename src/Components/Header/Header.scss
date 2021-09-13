@@ -1,0 +1,15 @@
+@import '../../styles/breakpoints.scss';
+
+.header {
+    margin: 0;
+    width: 100%;
+    height: 40vh;
+    background: rgb(206,222,242);
+    background: linear-gradient(180deg, rgba(206,222,242,1) 0%, rgba(255,168,4,0) 20%, rgba(242,185,153,1) 100%), url("../../images/beach-dog.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    @include medium {
+        height: 45vh;
+    }
+}
