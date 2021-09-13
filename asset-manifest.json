@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Fizjo-for-dogs/static/css/main.9cac1922.chunk.css",
+    "main.css": "/Fizjo-for-dogs/static/css/main.6cb32480.chunk.css",
     "main.js": "/Fizjo-for-dogs/static/js/main.57f48d46.chunk.js",
     "main.js.map": "/Fizjo-for-dogs/static/js/main.57f48d46.chunk.js.map",
     "runtime-main.js": "/Fizjo-for-dogs/static/js/runtime-main.8b9033c1.js",
@@ -8,14 +8,14 @@
     "static/js/2.6cda2b91.chunk.js": "/Fizjo-for-dogs/static/js/2.6cda2b91.chunk.js",
     "static/js/2.6cda2b91.chunk.js.map": "/Fizjo-for-dogs/static/js/2.6cda2b91.chunk.js.map",
     "index.html": "/Fizjo-for-dogs/index.html",
-    "static/css/main.9cac1922.chunk.css.map": "/Fizjo-for-dogs/static/css/main.9cac1922.chunk.css.map",
+    "static/css/main.6cb32480.chunk.css.map": "/Fizjo-for-dogs/static/css/main.6cb32480.chunk.css.map",
     "static/js/2.6cda2b91.chunk.js.LICENSE.txt": "/Fizjo-for-dogs/static/js/2.6cda2b91.chunk.js.LICENSE.txt",
     "static/media/Header.scss": "/Fizjo-for-dogs/static/media/beach-dog.dcd60605.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.8b9033c1.js",
     "static/js/2.6cda2b91.chunk.js",
-    "static/css/main.9cac1922.chunk.css",
+    "static/css/main.6cb32480.chunk.css",
     "static/js/main.57f48d46.chunk.js"
   ]
 }
