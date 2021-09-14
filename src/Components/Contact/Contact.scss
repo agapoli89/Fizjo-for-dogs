@@ -1,9 +1,16 @@
 @import '../../styles/breakpoints.scss';
 
 .contact {
-    margin-bottom: 1.5rem;
+    width: 95vw;
+    margin-top: 2.5rem;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 1rem 0 2rem;
     display: flex;
     flex-direction: column;
+    background-color: #375915;
+    box-sizing: border-box;
+    border-radius: 5px;
     &__link {
         align-self: center;
         display: flex;
@@ -11,17 +18,18 @@
         column-gap: 0.5rem;
     }
     @include small {
+        padding: 1rem 1.5rem 1.5rem;
         width: 90vw;
-        margin-right: auto;
-        margin-left: auto;
     }
     @include medium {
         width: 80vw;
     }
     @include large {
+        padding: 1rem 2rem 1.5rem;
         width: 70vw;
     }
     @include extra-large {
+        padding: 1rem 3rem 1.5rem;
         width: 60vw;
     }
 }

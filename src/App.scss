@@ -11,8 +11,8 @@
   width: 100%;
   min-height: 70vh;
   box-sizing: border-box;
-  background: rgb(242,185,153);
-  background: linear-gradient(360deg, rgba(242,185,153,0.01) 0%, rgba(242,185,153,0.2) 35%, rgba(242,185,153,1) 100%);
+  background: rgb(98,140,35);
+  background: linear-gradient(180deg, rgba(98,140,35,1) 10%, rgba(98,140,35, 0.5) 80%, rgba(98,140,35,1) 100%);
   color: $main-text-color;
   text-align: justify;
   &__header {
@@ -35,6 +35,7 @@
   & a {
     text-decoration: none;
     color: $main-text-color;
+    font-size: 1.5rem;
     @include extra-large {
       font-size: 2rem;
     }
