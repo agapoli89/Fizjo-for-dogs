@@ -1,11 +1,11 @@
-import MyPhoto from '../../images/about-me.jpg';
+import MyPhoto from '../../images/about-me2.jpg';
 import './AboutMe.scss';
 
 const AboutMe = () => {
     return (  
         <div className="about-me">
             <h2 className="main-content__header">O mnie</h2>
-            <p className="main-content__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
+            <p className="main-content__text">Rehabilitacją psów zainteresowałam się kiedy moja adoptowana rottweilerka osiągnęła wiek bardzo dojrzały i&nbsp;zaczęły niedomagać jej kolana. Zastosowana fizjoterapia dała świetne rezultaty i&nbsp;Blanka mogła cieszyć się długimi spacerami. Ja tymczasem zdobywałam wiedzę i&nbsp;zdałam bardzo dobrze egzamin uprawniający mnie do wykonywania zabiegów. Psy i&nbsp;ich dobrostan są moją pasją.</p>
             <div className="about-me__image-box"><img src={MyPhoto} alt="Me and my dogs"/></div>
         </div>
     );

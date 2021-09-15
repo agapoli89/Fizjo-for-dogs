@@ -4,7 +4,7 @@ const MyServices = () => {
     return (
         <div className="my-services">
             <h2 className="main-content__header">Co oferuję?</h2>
-            <p className="main-content__text">Prowadzę fizjoterapię po zabiegach ortopedycznych, neurologicznych, w&nbsp;przewlekłych chorobach stawów, dysplazjach, zanikach mięśni, zapaleniach ścięgien.</p>
+            <p className="main-content__text">Prowadzę fizjoterapię po&nbsp;zabiegach neurologicznych i&nbsp;ortopedycznych, w&nbsp;chorobach  zwyrodnieniowych stawów, chorobach zwyrodnieniowych kręgosłupa,  po&nbsp;złamaniach, zwichnięciach, przykurczach mięśni, urazach ścięgien.</p>
             <div className="my-services__container">
                 <div className="my-services__item">LASEROTERAPIA</div>
                 <div className="my-services__item">ULTRADŹWIĘKI</div>
