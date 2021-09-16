@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/Fizjo-for-dogs/static/css/main.24ecb99d.chunk.css",
-    "main.js": "/Fizjo-for-dogs/static/js/main.7ae47cf8.chunk.js",
-    "main.js.map": "/Fizjo-for-dogs/static/js/main.7ae47cf8.chunk.js.map",
+    "main.js": "/Fizjo-for-dogs/static/js/main.24357d8e.chunk.js",
+    "main.js.map": "/Fizjo-for-dogs/static/js/main.24357d8e.chunk.js.map",
     "runtime-main.js": "/Fizjo-for-dogs/static/js/runtime-main.8b9033c1.js",
     "runtime-main.js.map": "/Fizjo-for-dogs/static/js/runtime-main.8b9033c1.js.map",
     "static/js/2.4bd00141.chunk.js": "/Fizjo-for-dogs/static/js/2.4bd00141.chunk.js",
@@ -17,6 +17,6 @@
     "static/js/runtime-main.8b9033c1.js",
     "static/js/2.4bd00141.chunk.js",
     "static/css/main.24ecb99d.chunk.css",
-    "static/js/main.7ae47cf8.chunk.js"
+    "static/js/main.24357d8e.chunk.js"
   ]
 }
