@@ -1,3 +1,5 @@
+import { BrowserRouter as Router } from 'react-router-dom';
+
 import Navigation from './Components/Navigation/Navigation';
 import Header from './Components/Header/Header';
 import AboutMe from './Components/AboutMe/AboutMe';
@@ -8,7 +10,8 @@ import './App.scss';
 
 function App() {
   return (
-    <div className="App">
+    <Router>
+      <div className="App">
       <Navigation />
       <Header />
       <main className="main-content">
@@ -18,6 +21,7 @@ function App() {
       </main>
       <Footer />
     </div>
+    </Router>
   );
 }
 

@@ -2,7 +2,7 @@ import './MyServices.scss';
 
 const MyServices = () => {
     return (
-        <div className="my-services">
+        <div id="co-oferuje" className="my-services">
             <h2 className="main-content__header">Co oferuję?</h2>
             <p className="main-content__text">Prowadzę fizjoterapię po&nbsp;zabiegach neurologicznych i&nbsp;ortopedycznych, w&nbsp;chorobach  zwyrodnieniowych stawów, chorobach zwyrodnieniowych kręgosłupa,  po&nbsp;złamaniach, zwichnięciach, przykurczach mięśni, urazach ścięgien.</p>
             <div className="my-services__container">

@@ -4,7 +4,7 @@ import './Contact.scss';
 
 const Contact = () => {
     return (  
-        <div className="contact">
+        <div id="kontakt" className="contact">
             <h2 className="main-content__header">Kontakt do mnie</h2>
             <p className="main-content__text">
                 Dojeżdżam do pacjentów na terenie Wrocławia i okolic. W&nbsp;celu ustalenia szczegółów proszę o kontakt telefoniczny.
