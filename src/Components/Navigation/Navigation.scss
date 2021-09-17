@@ -2,10 +2,7 @@
 @import '../../styles/breakpoints.scss';
 
 .navigation {
-    position: -webkit-sticky; /* Safari */
-    position: sticky;
-    top: 0;
-    margin: 0;
+    position: relative;
     padding: 1.2rem 0;
     width: 100%;
     box-sizing: border-box;
@@ -17,6 +14,14 @@
     color: $main-color;
     font-size: 1.1rem;
     font-weight: 500;
+    z-index: 2;
+    align-items: center;
+    &__container {
+        position: -webkit-sticky; /* Safari */
+        position: sticky;
+        top: 0;
+        z-index: 3;
+    }
     &__name {
         width: 60%;
         text-align: start;
@@ -41,14 +46,38 @@
         width: 100%;
         list-style: none;
         padding-left: 0;
+        //animation
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        z-index: -1;
+        margin: 0;
         & li {
-            margin-top: 0.5rem;
+            background-color: $background-main;
+            //margin-top: 0.5rem;
+            transform-origin: top center;
+            opacity: 0
+        }
+        &--item1 {
+            padding-bottom: 0.5rem;
+            animation: translateX 300ms 120ms ease-in-out forwards;
+        }
+        &--item2 {
+            padding-bottom: 0.5rem;
+            animation: translateX 300ms 180ms ease-in-out forwards;
+        }
+        &--item3 {
+            padding-bottom: 1rem;
+            animation: translateX 300ms 240ms ease-in-out forwards;
         }
         @include medium {
             width: 40%;
+            position: static;
             & li {
             display: inline;
             margin-left: 1rem;
+            background-color: transparent;
             }
         }
     }
@@ -57,6 +86,8 @@
         color: $main-color;
     }
     @include medium {
+        
+        margin: 0;
         padding: 1.2rem 3rem;
         align-items: center;
     }
@@ -68,3 +99,19 @@
         font-size: 1.3rem;
     }
 }
+
+@keyframes translateX {
+    0% {
+      opacity: 0;
+      transform: translateX(60px);
+    }
+    
+    80% {
+      transform: translateX(-5px);
+    }
+  
+    100% {
+      opacity: 1;
+      transform: translateX(0px);
+    }
+  }

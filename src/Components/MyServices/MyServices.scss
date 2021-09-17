@@ -18,7 +18,7 @@
         margin: 1rem 0;
         padding: 1rem;
         width: 70%;
-        height: 3rem;
+        min-height: 3rem;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -29,15 +29,33 @@
         text-align: center;
         border-radius: 5px;
         cursor: pointer;
+        &:hover {
+            transform: scale(1.1);
+        }
+        &__description {
+            position: relative;
+            padding: 2rem;
+            text-align: justify;
+            cursor: auto;
+            &__icon {
+                position: absolute;
+                right: 0.5rem;
+                top: 0.5rem;
+                cursor: pointer;
+            }
+            &:hover {
+                transform: scale(1);
+            }
+        }
         @include small {
             width: 40%;
-            height: 4rem;
+            min-height: 4rem;
         }
         @include medium {
             width: 25%;
         }
         @include large {
-            height: 5rem;
+            min-height: 5rem;
         }
     }
     @include small {

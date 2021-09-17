@@ -22,33 +22,32 @@ const Navigation = () => {
     const toggleMenu = () => setIsMenuOpen(prev => !prev);
 
     return (  
-        <nav className="navigation">
+        <div className="navigation__container">
+            <nav className="navigation">
             <motion.div initial={{opacity: 0}}
                 animate={{opacity: 1}}
                 transition={{ duration: 1 }} 
                 className="navigation__name"
             >
-                <Link smooth to="/#" className="navigation__name__link">Rehabilitacja psów<span>- Jolanta Mielnik-Kuriata</span></Link></motion.div>
+                <Link smooth to="/#" className="navigation__name__link">Psy - rehabilitacja</Link></motion.div>
             <motion.div 
                 initial={{opacity: 0}}
                 animate={{opacity: 1}}
-                transition={{ duration: 1 }}
+                transition={{ duration: 0.7 }}
                 className="navigation__hamburger" onClick={toggleMenu}
             ><IoMenuOutline /></motion.div>
             {
                 (isMenuOpen || isNotMobileMenu) &&
-                <motion.ul 
-                    initial={{opacity: 0}}
-                    animate={{opacity: 1}}
-                    transition={{ duration: 2 }}
+                <ul 
                     className="navigation__menu"
                 >
-                    <li><Link to="/#o-mnie" exact scroll={(el) => scrollWithOffset(el, 85)} onClick={toggleMenu}>O mnie</Link></li>
-                    <li><Link to="/#co-oferuje" exact scroll={(el) => scrollWithOffset(el, 85)} onClick={toggleMenu}>Co oferuję</Link></li>
-                    <li><Link smooth to="/#kontakt" onClick={toggleMenu}>Kontakt</Link></li>
-                </motion.ul>
+                    <li className="navigation__menu--item1"><Link to="/#o-mnie" exact scroll={(el) => scrollWithOffset(el, 85)} onClick={toggleMenu}>O mnie</Link></li>
+                    <li className="navigation__menu--item2"><Link to="/#co-oferuje" exact scroll={(el) => scrollWithOffset(el, 85)} onClick={toggleMenu}>Co oferuję</Link></li>
+                    <li className="navigation__menu--item3"><Link smooth to="/#kontakt" onClick={toggleMenu}>Kontakt</Link></li>
+                </ul>
             }
         </nav>
+        </div>
     );
 }
  
