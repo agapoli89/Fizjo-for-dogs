@@ -12,15 +12,15 @@ function App() {
   return (
     <Router>
       <div className="App">
-      <Navigation />
-      <Header />
-      <main className="main-content">
-        <AboutMe />
-        <MyServices />
-        <Contact />
-      </main>
-      <Footer />
-    </div>
+        <Navigation />
+        <Header />
+        <main className="main-content">
+          <AboutMe />
+          <MyServices />
+          <Contact />
+        </main>
+        <Footer />
+      </div>
     </Router>
   );
 }

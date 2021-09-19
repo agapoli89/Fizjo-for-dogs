@@ -3,7 +3,7 @@
 
 .App {
   text-align: center;
-  box-sizing: border-box;
+  box-sizing: border-box; 
 }
 
 .main-content {
@@ -11,7 +11,7 @@
   width: 100%;
   min-height: 70vh;
   box-sizing: border-box;
-  background: rgb(98,140,35);
+  background: $background-main;
   background: linear-gradient(180deg, rgba(98,140,35,1) 10%, rgba(98,140,35, 0.5) 80%, rgba(98,140,35,1) 100%);
   color: $main-text-color;
   text-align: justify;

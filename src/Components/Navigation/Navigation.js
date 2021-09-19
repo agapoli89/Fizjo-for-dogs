@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 import { IoMenuOutline } from "react-icons/io5";
 import './Navigation.scss';
 
-
+//function from: https://codesandbox.io/s/04rsh?file=/src/components/Navbar.jsx:977-1018
 export const scrollWithOffset = (el, offset) => {
     window.scroll({
       top: el.offsetTop - offset,
@@ -15,34 +15,49 @@ export const scrollWithOffset = (el, offset) => {
     });
 };
 
+const navVariants = {
+    hidden: {
+        opacity: 0,
+    },
+    visible: {
+        opacity: 1,
+    }
+}
+
 const Navigation = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const isNotMobileMenu = useMediaQuery({ query: '(min-width:768px)' });
+    const offsetNumber = 85;
 
     const toggleMenu = () => setIsMenuOpen(prev => !prev);
 
     return (  
         <div className="navigation__container">
             <nav className="navigation">
-            <motion.div initial={{opacity: 0}}
-                animate={{opacity: 1}}
+            <motion.div 
+                variants={navVariants}
+                initial="hidden"
+                animate="visible"
                 transition={{ duration: 1 }} 
                 className="navigation__name"
             >
                 <Link smooth to="/#" className="navigation__name__link">Psy - rehabilitacja</Link></motion.div>
             <motion.div 
-                initial={{opacity: 0}}
-                animate={{opacity: 1}}
+                variants={navVariants}
+                initial="hidden"
+                animate="visible"
                 transition={{ duration: 0.7 }}
                 className="navigation__hamburger" onClick={toggleMenu}
-            ><IoMenuOutline /></motion.div>
+            >
+                <IoMenuOutline />
+            </motion.div>
             {
                 (isMenuOpen || isNotMobileMenu) &&
                 <ul 
                     className="navigation__menu"
                 >
-                    <li className="navigation__menu--item1"><Link to="/#o-mnie" exact scroll={(el) => scrollWithOffset(el, 85)} onClick={toggleMenu}>O mnie</Link></li>
-                    <li className="navigation__menu--item2"><Link to="/#co-oferuje" exact scroll={(el) => scrollWithOffset(el, 85)} onClick={toggleMenu}>Co oferuję</Link></li>
+                    <li className="navigation__menu--item1"><Link to="/#o-mnie" exact scroll={(el) => scrollWithOffset(el, offsetNumber)} onClick={toggleMenu}>O mnie</Link></li>
+                    <li className="navigation__menu--item2"><Link to="/#co-oferuje" exact scroll={(el) => scrollWithOffset(el, offsetNumber)} onClick={toggleMenu}>Co oferuję</Link></li>
                     <li className="navigation__menu--item3"><Link smooth to="/#kontakt" onClick={toggleMenu}>Kontakt</Link></li>
                 </ul>
             }

@@ -3,19 +3,18 @@
 
 .navigation {
     position: relative;
-    padding: 1.2rem 0;
+    padding: 0.5rem 0;
     width: 100%;
     box-sizing: border-box;
-    //background: rgb(255,255,255);
     background: linear-gradient(180deg, rgba(98,140,35,0.8) 20%, rgba(98,140,35,1) 80%);
     display: flex;
     justify-content: space-around;
+    align-items: center;
     flex-wrap: wrap;
     color: $main-color;
     font-size: 1.1rem;
     font-weight: 500;
     z-index: 2;
-    align-items: center;
     &__container {
         position: -webkit-sticky; /* Safari */
         position: sticky;
@@ -28,9 +27,6 @@
         &__link {
             display: flex;
             flex-direction: column;
-        }
-        & span {
-            font-size: 0.9rem;
         }
         @include medium {
             width: 50%;
@@ -55,9 +51,8 @@
         margin: 0;
         & li {
             background-color: $background-main;
-            //margin-top: 0.5rem;
             transform-origin: top center;
-            opacity: 0
+            opacity: 0;
         }
         &--item1 {
             padding-bottom: 0.5rem;
@@ -86,7 +81,6 @@
         color: $main-color;
     }
     @include medium {
-        
         margin: 0;
         padding: 1.2rem 3rem;
         align-items: center;
@@ -105,11 +99,9 @@
       opacity: 0;
       transform: translateX(60px);
     }
-    
     80% {
       transform: translateX(-5px);
     }
-  
     100% {
       opacity: 1;
       transform: translateX(0px);

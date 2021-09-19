@@ -3,7 +3,9 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { IoCloseCircleOutline } from "react-icons/io5";
 import './MyServices.scss';
 
-const MyServices = () => {
+
+
+const MyServices = () => { 
 
     const [service, setService] = useState('');
     const setLaserTherapy = () => setService('laserTherapy');
@@ -15,15 +17,15 @@ const MyServices = () => {
     const serviceDescription = () => {
         switch (service) {
             case "laserTherapy":
-                return "Laseroterapia - tak jak u ludzi, również u psów, za pomocą promieniowania laserowego stymulujemy procesy lecznicze. Terapia działa przeciwzapalnie, przeciwbólowo, przeciwobrzękowo, przyspiesza regenerację tkanek.";
+                return "Laseroterapia - tak jak u\xa0ludzi, również u\xa0psów, za\xa0pomocą promieniowania laserowego stymulujemy procesy lecznicze. Terapia działa przeciwzapalnie, przeciwbólowo, przeciwobrzękowo, przyspiesza regenerację tkanek.";
             case "ultraSounds":
-                return "Ultradzwięki - celem terapii ultradzwiękami jest zmniejszenie bólu, poprawa elastyczności tkanek, zmniejszenie napięcia mięśniowego w chorej okolicy, poprawa ukrwienia, zwiększenie rozciągliwości tkanki łącznej w bliznach, przykurczach, zwłóknieniach, przyspieszenie gojenia. Wskazaniami są wszelkie urazy i przewlekłe stany zapalne w obrębie mięśni, więzadeł, ścięgien i torebek stawowych.";
+                return "Ultradzwięki - celem terapii ultradzwiękami jest zmniejszenie bólu, poprawa elastyczności tkanek, zmniejszenie napięcia mięśniowego w\xa0chorej okolicy, poprawa ukrwienia, zwiększenie rozciągliwości tkanki łącznej w\xa0bliznach, przykurczach, zwłóknieniach, przyspieszenie gojenia. Wskazaniami są\xa0wszelkie urazy i\xa0przewlekłe stany zapalne w\xa0obrębie mięśni, więzadeł, ścięgien i\xa0torebek stawowych.";
             case "electrotherapy":
-                return "Elektroterapia - stosując różne rodzaje prądów można działać przeciwbólowo jak również odbudować mięśnie w zaniku.";
+                return "Elektroterapia - stosując różne rodzaje prądów można działać przeciwbólowo jak również odbudować mięśnie w\xa0zaniku.";
             case "massages": 
-                return "Masaż czyni cuda. Poprawia sprężystość i elastyczność tkaneek, przyspiesza regenerację kolagenu, poprawia odżywienie tkanek, ich ukrwienie, a co za tym idzie utlenowanie krwi. Przywraca mięśniom właściwą masę i siłę. Wskazaniami do masażu leczniczego są długotrwałe unieruchomienia, przykurcze mięśni, zaniki mięśni, różnego rodzaju urazy ortopedyczne.";
+                return "Masaż czyni cuda. Poprawia sprężystość i\xa0elastyczność tkaneek, przyspiesza regenerację kolagenu, poprawia odżywienie tkanek, ich ukrwienie, a\xa0co za tym idzie utlenowanie krwi. Przywraca mięśniom właściwą masę i\xa0siłę. Wskazaniami do masażu leczniczego są długotrwałe unieruchomienia, przykurcze mięśni, zaniki mięśni, różnego rodzaju urazy ortopedyczne.";
             case "exercises":
-                return "Ćwiczenia mają na celu zwiększenie zakresu ruchu, zwiększenie masy mięśniowej, poprawę kondycji i co za tym idzie, poprawienie komfortu życia psa."
+                return "Ćwiczenia mają na celu zwiększenie zakresu ruchu, zwiększenie masy mięśniowej, poprawę kondycji i\xa0co za tym idzie, poprawienie komfortu życia psa."
             default:
                 return "Mamy jakiś problem...";
         }
@@ -32,7 +34,7 @@ const MyServices = () => {
     return (
         <div id="co-oferuje" className="my-services">
             <h2 className="main-content__header">Co oferuję?</h2>
-            <p className="main-content__text">Prowadzę fizjoterapię po&nbsp;zabiegach neurologicznych i&nbsp;ortopedycznych, w&nbsp;chorobach  zwyrodnieniowych stawów, chorobach zwyrodnieniowych kręgosłupa,  po&nbsp;złamaniach, zwichnięciach, przykurczach mięśni, urazach ścięgien.</p>
+            <p className="main-content__text">Prowadzę fizjoterapię po&nbsp;zabiegach neurologicznych i&nbsp;ortopedycznych, w&nbsp;chorobach  zwyrodnieniowych stawów, chorobach zwyrodnieniowych kręgosłupa, po&nbsp;złamaniach, zwichnięciach, przykurczach mięśni, urazach ścięgien.</p>
             <div className="my-services__container">
                 <AnimatePresence exitBeforeEnter>
                     {!service ? 
