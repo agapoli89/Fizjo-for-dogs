@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/Fizjo-for-dogs/static/css/main.495e02c6.chunk.css",
-    "main.js": "/Fizjo-for-dogs/static/js/main.7e44bf6e.chunk.js",
-    "main.js.map": "/Fizjo-for-dogs/static/js/main.7e44bf6e.chunk.js.map",
+    "main.css": "/Fizjo-for-dogs/static/css/main.b6ed079d.chunk.css",
+    "main.js": "/Fizjo-for-dogs/static/js/main.8d02134d.chunk.js",
+    "main.js.map": "/Fizjo-for-dogs/static/js/main.8d02134d.chunk.js.map",
     "runtime-main.js": "/Fizjo-for-dogs/static/js/runtime-main.8b9033c1.js",
     "runtime-main.js.map": "/Fizjo-for-dogs/static/js/runtime-main.8b9033c1.js.map",
-    "static/js/2.a4ceb8ff.chunk.js": "/Fizjo-for-dogs/static/js/2.a4ceb8ff.chunk.js",
-    "static/js/2.a4ceb8ff.chunk.js.map": "/Fizjo-for-dogs/static/js/2.a4ceb8ff.chunk.js.map",
+    "static/js/2.4bd00141.chunk.js": "/Fizjo-for-dogs/static/js/2.4bd00141.chunk.js",
+    "static/js/2.4bd00141.chunk.js.map": "/Fizjo-for-dogs/static/js/2.4bd00141.chunk.js.map",
     "index.html": "/Fizjo-for-dogs/index.html",
-    "static/css/main.495e02c6.chunk.css.map": "/Fizjo-for-dogs/static/css/main.495e02c6.chunk.css.map",
-    "static/js/2.a4ceb8ff.chunk.js.LICENSE.txt": "/Fizjo-for-dogs/static/js/2.a4ceb8ff.chunk.js.LICENSE.txt",
+    "static/css/main.b6ed079d.chunk.css.map": "/Fizjo-for-dogs/static/css/main.b6ed079d.chunk.css.map",
+    "static/js/2.4bd00141.chunk.js.LICENSE.txt": "/Fizjo-for-dogs/static/js/2.4bd00141.chunk.js.LICENSE.txt",
     "static/media/about-me2.35bb6cc6.jpg": "/Fizjo-for-dogs/static/media/about-me2.35bb6cc6.jpg",
     "static/media/Header.scss": "/Fizjo-for-dogs/static/media/dog.96471a56.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.8b9033c1.js",
-    "static/js/2.a4ceb8ff.chunk.js",
-    "static/css/main.495e02c6.chunk.css",
-    "static/js/main.7e44bf6e.chunk.js"
+    "static/js/2.4bd00141.chunk.js",
+    "static/css/main.b6ed079d.chunk.css",
+    "static/js/main.8d02134d.chunk.js"
   ]
 }
