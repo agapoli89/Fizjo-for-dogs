@@ -23,7 +23,7 @@ const MyServices = () => {
             case "electrotherapy":
                 return "Elektroterapia - stosując różne rodzaje prądów można działać przeciwbólowo jak również odbudować mięśnie w\xa0zaniku.";
             case "massages": 
-                return "Masaż czyni cuda. Poprawia sprężystość i\xa0elastyczność tkaneek, przyspiesza regenerację kolagenu, poprawia odżywienie tkanek, ich ukrwienie, a\xa0co za tym idzie utlenowanie krwi. Przywraca mięśniom właściwą masę i\xa0siłę. Wskazaniami do masażu leczniczego są długotrwałe unieruchomienia, przykurcze mięśni, zaniki mięśni, różnego rodzaju urazy ortopedyczne.";
+                return "Masaż czyni cuda. Poprawia sprężystość i\xa0elastyczność tkanek, przyspiesza regenerację kolagenu, poprawia odżywienie tkanek, ich ukrwienie, a\xa0co za tym idzie utlenowanie krwi. Przywraca mięśniom właściwą masę i\xa0siłę. Wskazaniami do masażu leczniczego są długotrwałe unieruchomienia, przykurcze mięśni, zaniki mięśni, różnego rodzaju urazy ortopedyczne.";
             case "exercises":
                 return "Ćwiczenia mają na celu zwiększenie zakresu ruchu, zwiększenie masy mięśniowej, poprawę kondycji i\xa0co za tym idzie, poprawienie komfortu życia psa."
             default:
