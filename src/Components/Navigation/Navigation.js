@@ -41,7 +41,7 @@ const Navigation = () => {
                 transition={{ duration: 1 }} 
                 className="navigation__name"
             >
-                <Link smooth to="/#" className="navigation__name__link">Psy - rehabilitacja</Link></motion.div>
+                <Link smooth to="/#" className="navigation__name__link">Rehabilitacja psów</Link></motion.div>
             <motion.div 
                 variants={navVariants}
                 initial="hidden"
