@@ -24,12 +24,14 @@
     &__name {
         width: 60%;
         text-align: start;
+        font-size: 1.3rem;
         &__link {
             display: flex;
             flex-direction: column;
         }
         @include medium {
             width: 50%;
+            font-size: 1.7rem;
         }
     }
     &__hamburger {

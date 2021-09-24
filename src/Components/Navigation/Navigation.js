@@ -27,7 +27,7 @@ const navVariants = {
 const Navigation = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const isNotMobileMenu = useMediaQuery({ query: '(min-width:768px)' });
-    const offsetNumber = 85;
+    const offsetNumber = 88;
 
     const toggleMenu = () => setIsMenuOpen(prev => !prev);
 
@@ -41,7 +41,7 @@ const Navigation = () => {
                 transition={{ duration: 1 }} 
                 className="navigation__name"
             >
-                <Link smooth to="/#" className="navigation__name__link">Rehabilitacja psów</Link></motion.div>
+                <Link smooth to="/#" className="navigation__name__link">Rehabilitacja psów <span>- Cagnolino</span></Link></motion.div>
             <motion.div 
                 variants={navVariants}
                 initial="hidden"
