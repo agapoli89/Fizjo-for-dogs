@@ -56,9 +56,9 @@ const Navigation = () => {
                 <ul 
                     className="navigation__menu"
                 >
-                    <li className="navigation__menu--item1"><Link to="/#o-mnie" exact scroll={(el) => scrollWithOffset(el, offsetNumber)} onClick={toggleMenu}>O mnie</Link></li>
-                    <li className="navigation__menu--item2"><Link to="/#co-oferuje" exact scroll={(el) => scrollWithOffset(el, offsetNumber)} onClick={toggleMenu}>Co oferuję</Link></li>
-                    <li className="navigation__menu--item3"><Link smooth to="/#kontakt" onClick={toggleMenu}>Kontakt</Link></li>
+                    <Link to="/#o-mnie" exact scroll={(el) => scrollWithOffset(el, offsetNumber)} onClick={toggleMenu}><li className="navigation__menu--item1">O mnie</li></Link>
+                    <Link to="/#co-oferuje" exact scroll={(el) => scrollWithOffset(el, offsetNumber)} onClick={toggleMenu}><li className="navigation__menu--item2">Co oferuję</li></Link>
+                    <Link smooth to="/#kontakt" onClick={toggleMenu}><li className="navigation__menu--item3">Kontakt</li></Link>
                 </ul>
             }
         </nav>

@@ -20,7 +20,7 @@
         position: sticky;
         top: 0;
         z-index: 3;
-    }
+    } 
     &__name {
         width: 60%;
         text-align: start;
@@ -57,11 +57,11 @@
             opacity: 0;
         }
         &--item1 {
-            padding-bottom: 0.5rem;
+            padding-bottom: 1rem;
             animation: translateX 300ms 120ms ease-in-out forwards;
         }
         &--item2 {
-            padding-bottom: 0.5rem;
+            padding-bottom: 1rem;
             animation: translateX 300ms 180ms ease-in-out forwards;
         }
         &--item3 {
